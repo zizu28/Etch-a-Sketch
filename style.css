@@ -100,7 +100,7 @@ input[type='color']:active {
   }
   
   input[type='range'] {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     background-color: #ededed;
   }
 
