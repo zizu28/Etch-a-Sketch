@@ -3,7 +3,7 @@ const DEFAULT_MODE = 'rainbow'
 const DEFAULT_COLOR = 'black'
 
 const grid = document.getElementById('grid')
-const color_picker = document.getElementById('grid-picker')
+const color_picker = document.getElementById('colour-picker')
 const rainbow_mode = document.getElementById('rainbow-mode')
 const colour_mode = document.getElementById('color-mode')
 const eraser = document.getElementById('eraser')
@@ -17,8 +17,8 @@ let currentSize = DEFAULT_SIZE
 
 // Dynamic function to create a grid of a specified size
 const gridSizeSetup = size => {
-    grid.size.gridTemplateColumns = `repeat(${size}, 1fr)`
-    grid.size.gridTemplateRows = `repeat(${size}, 1fr)`
+    grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    grid.style.gridTemplateRows = `repeat(${size}, 1fr)`
 
     for(let i = 0; i < size; i++){
         const gridElement = document.createElement('div')
@@ -93,7 +93,7 @@ const colorChanger = event => {
     }
 }
 
-color_picker.oninput = event => setColor(event.target.value)
+color_picker.oninput = (event) => setColor(event.target.value)
 rainbow_mode.onclick = () => setButtonMode('rainbow')
 colour_mode.onclick = () => setButtonMode('color')
 eraser.onclick = () => setButtonMode('eraser')
