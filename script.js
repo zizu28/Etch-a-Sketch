@@ -38,8 +38,6 @@ window.onload = () => {
     size_slider.onchange = (event) => changeSize(event.target.value)
 }
 
-
-
 let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
@@ -118,9 +116,3 @@ const colorChanger = event => {
     event.target.style.backgroundColor = '#fefefe'
     }
 }
-
-
-// window.onload = () => {
-//     gridSizeSetup(currentSize)
-//     activateButton(currentMode)
-// }
