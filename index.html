@@ -7,14 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"
     />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <script
-      src="https://kit.fontawesome.com/4c536a6bd5.js"
-      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"
     ></script>
 </head>
 <body>
@@ -22,6 +20,7 @@
         <h1 class="title">Etch-a-Sketch</h1>
     </header>
     <main class="main">
+        <div id="grid" class="grid"></div>
         <div class="setting">
             <input type="color" id="colour-picker" value="#232529">
             <button id="color-mode">Colour Mode</button>
@@ -30,8 +29,7 @@
             <button id="clear">Clear</button>
             <div class="size" id="size">16 X 16</div>
             <input type="range" id="size-slider" value="16" min="1" max="64">
-        </div>
-        <div id="grid" class="grid"></div>
+        </div>   
     </main>
     <footer class="footer">
         <p>
